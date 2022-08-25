@@ -14,9 +14,9 @@ if (nivel == 'baby') {
 
   const html = document.querySelector('html')
   
-  document.body.style.backgroundImage = 'url("./src/imagens/castelo_princesa.jpg")'
+  document.body.style.backgroundImage = 'url("../imagens/castelo_princesa.jpg")'
 
-  html.style.cursor = 'url("./src/imagens/coroapng.png") 30 30, auto'
+  html.style.cursor = 'url("../imagens/coroapng.png") 30 30, auto'
 
   console.log('baby level', html.style.cursor)
 
@@ -45,7 +45,7 @@ if (nivel == 'baby') {
       if (vidas > 3) {
         window.location.href = 'fim_de_jogo.html?' + pontos
       } else {
-        document.querySelector('#v' + vidas).src = "./src/imagens/coracao_vazio.png"
+        document.querySelector('#v' + vidas).src = "../imagens/coracao_vazio.png"
   
         vidas++
       }
@@ -60,7 +60,7 @@ if (nivel == 'baby') {
     console.log(posicaoX, posicaoY)
   
     const mosquito = document.createElement('img')
-    mosquito.src = './src/imagens/mosquito.png'
+    mosquito.src = '../imagens/mosquito.png'
     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
@@ -149,7 +149,7 @@ if (nivel == 'baby') {
       if (vidas > 3) {
         window.location.href = 'fim_de_jogo.html?' + pontos
       } else {
-        document.querySelector('#v' + vidas).src = "./src/imagens/coracao_vazio.png"
+        document.querySelector('#v' + vidas).src = "../imagens/coracao_vazio.png"
   
         vidas++
       }
@@ -164,7 +164,7 @@ if (nivel == 'baby') {
     console.log(posicaoX, posicaoY)
   
     const mosquito = document.createElement('img')
-    mosquito.src = './src/imagens/mosquito.png'
+    mosquito.src = '../imagens/mosquito.png'
     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
