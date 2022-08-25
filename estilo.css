@@ -75,4 +75,24 @@ body {
   text-align: center;
   margin-top: 300px;
   margin-bottom: 125px;
+  transition: 0.3s;
+  animation: pulse 2.5s infinite;
+  transform: scale(1);
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.7);
+    color: #fff;
+	}
+
+	 50% {
+		transform: scale(1);
+    color: #fc95e7;
+	} 
+
+	100% {
+		transform: scale(0.7);
+    color: #fff;
+	}
 }
