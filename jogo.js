@@ -11,6 +11,8 @@ nivel = nivel.replace('?', '')
 
 if (nivel == 'baby') {
   document.querySelector('#cronometro').innerHTML = tempo
+  
+  tempoMosquito = 1200
 
   const html = document.querySelector('html')
   
